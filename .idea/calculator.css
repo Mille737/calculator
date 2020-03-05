@@ -3,19 +3,37 @@
     max-width: fit-content;
     border-style: solid;
     padding: 5px;
+    background-color: rgb(232, 232, 230);
+
 }
 .row {
     display: flex;
 }
 .row input {
     flex-grow: 1;
-    font-size: large;
+    font-size: xx-large;
+    margin: 4px;
+    border-radius: 11px;
+    background-color: rgb(230, 219, 218, 1);
+    align-items: center;
+    flex-basis: 0;
+}
+
+input[type="button"] {
+    border: solid;
+    border-width: thin;
 }
 
 #clear {
-    color: darkred;
+    background-color: rgb(219, 26, 26, 1);
 }
 
 input[name="displayResult"] {
-    margin-bottom: 3px;
+    margin-bottom: 10px;
+}
+input[name="equals"] {
+    background-color: rgb(237, 233, 123, 1.5);
+}
+input[name="addition"],input[name="subtraction"],input[name="multiplication"],input[name="division"],input[name="modulus"] {
+    background-color: rgb(237, 154, 64, 1);
 }
