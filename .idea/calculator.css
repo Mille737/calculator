@@ -1,0 +1,21 @@
+.calcContainer {
+    display: flex;
+    max-width: fit-content;
+    border-style: solid;
+    padding: 5px;
+}
+.row {
+    display: flex;
+}
+.row input {
+    flex-grow: 1;
+    font-size: large;
+}
+
+#clear {
+    color: darkred;
+}
+
+input[name="displayResult"] {
+    margin-bottom: 3px;
+}

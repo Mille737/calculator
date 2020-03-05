@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<body>
+<script>
+    function calcNumbers(result) {
+        form.displayResult.value=form.displayResult.value+result;
+    }
+    function clearResult() {
+        document.getElementById("text").value = '';
+    }
+</script>
+    <div class="calcContainer">
+        <form name="form">
+            <div class="row">
+                <input type="text" id="text" name="displayResult" placeholder="0" />
+            </div>
+            <div class="calcButtons">
+            <div class="row">
+                <input type="button" name="b7" value="7" onclick="calcNumbers(b7.value)">
+                <input type="button" name="b8" value="8" onclick="calcNumbers(b8.value)">
+                <input type="button" name="b9" value="9" onclick="calcNumbers(b9.value)">
+                <input type="button" name="addition" value="+" onclick="calcNumbers(addition.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="b4" value="4" onclick="calcNumbers(b4.value)">
+                <input type="button" name="b5" value="5" onclick="calcNumbers(b5.value)">
+                <input type="button" name="b6" value="6" onclick="calcNumbers(b6.value)">
+                <input type="button" name="subtraction" value="-" onclick="calcNumbers(subtraction.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="b1" value="1" onclick="calcNumbers(b1.value)">
+                <input type="button" name="b2" value="2" onclick="calcNumbers(b2.value)">
+                <input type="button" name="b3" value="3" onclick="calcNumbers(b3.value)">
+                <input type="button" name="multiplication" value="x" onclick="calcNumbers(multiplication.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="b0" value="0" onclick="calcNumbers(b0.value)">
+                <input type="button" name="decimal" value="." onclick="calcNumbers(decimal.value)">
+                <input type="button" name="modulus" value="%" onclick="calcNumbers(modulus.value)">
+                <input type="button" name="division" value="/" onclick="calcNumbers(division.value)">
+            </div>
+            <div class="row">
+                <input type="button" id="clear" value="C" onclick="clearResult()">
+                <input type="button" name="equals" value="=" onclick="displayResult.value = eval(displayResult.value)">
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
